@@ -53,5 +53,4 @@ QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
 
 #DISTFILES += \
-#    ../../inf/task7/lab7/text/tracer.o \
 #    ../../inf/task7/lab7/showlengths.o
