@@ -3,6 +3,10 @@
 
 extern "C" {
 #include "common.h"
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <stdio.h>
 }
 
 TEST(test_one_h, one)
@@ -20,7 +24,7 @@ TEST(protest, show_lengths)
 
      int oldstdout;
 
-     fptr = open("testwork",O_CREAT|O_RDWR,S_IREAD|S_IWRITE);
+     fptr = open("testwork.txt",O_CREAT|O_RDWR,S_IREAD|S_IWRITE);
 
      oldstdout = dup(STDOUT);
 
@@ -28,7 +32,7 @@ TEST(protest, show_lengths)
 
      char *filedir=(char*)malloc(1024);
 
-     sprintf(filedir, "%s/textd.с", TESTIDIR);
+     sprintf(filedir, "%s/text.txt", TESTIDIR);
 
      text txt = create_text();
 
@@ -42,7 +46,7 @@ dup2(oldstdout,STDOUT);
 
      FILE *t2;
 
-     t2 = fopen("testwork","rw");
+     t2 = fopen("testwork.txt","rw");
 
      if(t2 == NULL){
 
@@ -58,7 +62,7 @@ dup2(oldstdout,STDOUT);
 
      FILE *d2;
 
-     sprintf(filedir, "%s/proverka", TESTIDIR);
+     sprintf(filedir, "%s/proverka.txt", TESTIDIR);
 
      d2 =fopen(filedir,"rw");
 
