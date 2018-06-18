@@ -12,7 +12,7 @@ TEST(test_one_h, one)
     SUCCEED();
 }
 
-/*TEST(protest, show)
+TEST(protest, show_lengths)
 
 {
 
@@ -20,7 +20,7 @@ TEST(test_one_h, one)
 
      int oldstdout;
 
-     fptr = open("DUMMY.BIL",O_CREAT|O_RDWR,S_IREAD|S_IWRITE);
+     fptr = open("testwork",O_CREAT|O_RDWR,S_IREAD|S_IWRITE);
 
      oldstdout = dup(STDOUT);
 
@@ -28,13 +28,13 @@ TEST(test_one_h, one)
 
      char *filedir=(char*)malloc(1024);
 
-     sprintf(filedir, "%s/load.txt", TESTIDIR);
+     sprintf(filedir, "%s/textd.с", TESTIDIR);
 
      text txt = create_text();
 
      load(txt, filedir);
 
-     show(txt);
+     showlengths(txt);
 
 close(fptr);
 
@@ -42,7 +42,7 @@ dup2(oldstdout,STDOUT);
 
      FILE *t2;
 
-     t2 = fopen("DUMMY.BIL","rw");
+     t2 = fopen("testwork","rw");
 
      if(t2 == NULL){
 
@@ -58,7 +58,7 @@ dup2(oldstdout,STDOUT);
 
      FILE *d2;
 
-     sprintf(filedir, "%s/proveka.txt", TESTIDIR);
+     sprintf(filedir, "%s/proverka", TESTIDIR);
 
      d2 =fopen(filedir,"rw");
 
@@ -80,7 +80,7 @@ dup2(oldstdout,STDOUT);
 
      ASSERT_EQ(readcount,readcount2);
 
-}*/
+}
 
 
 
