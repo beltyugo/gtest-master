@@ -7,7 +7,6 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
 extern "C" {
 #include "common.h"
 #include "text.h"
@@ -25,7 +24,10 @@ TEST(test_one_h, one)
 TEST(protest, show_lengths)
 
 {
+    void show(text txt);
+    void load(text txt, char *filename);
 
+     printf("good");
      int fptr;
 
      int oldstdout;
