@@ -14,6 +14,9 @@ extern "C" {
 #define STDOUT 1
 }
 
+void show(text txt);
+void load(text txt, char *filename);
+
 TEST(test_one_h, one)
 {
     text txt = create_text();
@@ -24,9 +27,6 @@ TEST(test_one_h, one)
 TEST(protest, show_lengths)
 
 {
-    void show(text txt);
-    void load(text txt, char *filename);
-
      printf("good");
      int fptr;
 
