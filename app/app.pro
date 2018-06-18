@@ -38,8 +38,8 @@ SOURCES += \
     delete_line.c \
     cursors.c \
     create_text.c \
-    append_line.c
-    #../../inf/task7/lab7/text/process_forward_extra_option.c
+    append_line.c \
+    process_forward_extra_option.c
 
 HEADERS += \
     myfunc.h \

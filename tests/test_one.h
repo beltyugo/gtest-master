@@ -12,7 +12,7 @@ TEST(test_one_h, one)
     SUCCEED();
 }
 
-TEST(protest, show)
+/*TEST(protest, show)
 
 {
 
@@ -80,7 +80,7 @@ dup2(oldstdout,STDOUT);
 
      ASSERT_EQ(readcount,readcount2);
 
-}
+}*/
 
 
 
