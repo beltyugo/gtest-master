@@ -3,14 +3,12 @@
 
 #include <gtest/gtest.h>
 #include <stdio.h>
-#include<string.h>
-#include<fcntl.h>
-extern "C" {
-#include "common.h"
-#include <unistd.h>
+#include <string.h>
 #include <fcntl.h>
+#include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
+extern "C" {
 #include "common.h"
 #include "text.h"
 #include "_text.h"
