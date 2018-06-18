@@ -38,14 +38,14 @@ SOURCES += \
     delete_line.c \
     cursors.c \
     create_text.c \
-    append_line.c \
-    ../../inf/task7/lab7/text/process_forward_extra_option.c
+    append_line.c
+    #../../inf/task7/lab7/text/process_forward_extra_option.c
 
 HEADERS += \
     myfunc.h \
     _text.h \
-    ../../inf/task7/lab7/text/_text.h \
-    _text.h \
+    #../../inf/task7/lab7/text/_text.h \
+   #_text.h \
     common.h
 
 QMAKE_CFLAGS += -Wall -Wextra -Werror
@@ -54,6 +54,6 @@ QMAKE_CFLAGS += -Wall -Wextra -Werror
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
 
-DISTFILES += \
-    ../../inf/task7/lab7/text/tracer.o \
-    ../../inf/task7/lab7/showlengths.o
+#DISTFILES += \
+#    ../../inf/task7/lab7/text/tracer.o \
+#    ../../inf/task7/lab7/showlengths.o
