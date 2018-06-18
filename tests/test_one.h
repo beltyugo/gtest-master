@@ -8,8 +8,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "common.h"
 extern "C" {
+#include "common.h"
 #include "text.h"
 #include "_text.h"
 #define STDOUT 1

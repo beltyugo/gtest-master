@@ -19,6 +19,7 @@ DEFINES += "TESTIDIR=\\\"$$PWD/../testi\\\""
 HEADERS +=     tst_test1.h \
     ../app/myfunc.h \
     fibonachi_test.h \
+    ../app/common.h \
     test_one.h
 
 SOURCES +=     main.cpp \
