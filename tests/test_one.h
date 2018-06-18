@@ -1,12 +1,20 @@
 #ifndef TEST_ONE_H
 #define TEST_ONE_H
 
+#include <gtest/gtest.h>
+#include <stdio.h>
+#include<string.h>
+#include<fcntl.h>
 extern "C" {
 #include "common.h"
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include "common.h"
+#include "text.h"
+#include "_text.h"
+#define STDOUT 1
 }
 
 TEST(test_one_h, one)
