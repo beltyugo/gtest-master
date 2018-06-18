@@ -44,8 +44,6 @@ SOURCES += \
 HEADERS += \
     myfunc.h \
     _text.h \
-    #../../inf/task7/lab7/text/_text.h \
-   #_text.h \
     common.h
 
 QMAKE_CFLAGS += -Wall -Wextra -Werror
