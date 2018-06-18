@@ -43,7 +43,7 @@ TEST(protest, show_lengths)
      text txt = create_text();
 
      load(txt, filedir);
-
+     show(txt);
      showlengths(txt);
 
 close(fptr);
