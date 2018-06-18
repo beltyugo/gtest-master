@@ -14,8 +14,6 @@ extern "C" {
 #define STDOUT 1
 }
 
-void show(text txt);
-void load(text txt, char *filename);
 
 TEST(test_one_h, one)
 {
