@@ -29,6 +29,8 @@ SOURCES +=     main.cpp \
     ../app/showlengths.c \
     ../app/process_forward.c \
     ../app/load.c \
+    ../app/remove_all.c \
+    ../app/append_line.c \
     ../app/create_text.c
 
 INCLUDEPATH += ../app
