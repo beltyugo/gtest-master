@@ -20,6 +20,8 @@ HEADERS +=     tst_test1.h \
     ../app/myfunc.h \
     fibonachi_test.h \
     ../app/common.h \
+    ../app/_text.h \
+    ../app/text.h \
     test_one.h
 
 SOURCES +=     main.cpp \
