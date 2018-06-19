@@ -1,3 +1,0 @@
-slovo
-vtoroe
-tret'e
