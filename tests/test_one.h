@@ -78,8 +78,9 @@ TEST (Showlengths, suite3) {
 
     text txt = create_text();
 
+    open("text2.txt",O_CREAT|O_RDWR,S_IREAD|S_IWRITE);
     char *filedir=(char*)malloc(256);
-    sprintf(filedir, "%s/text2.txt", TESTIDIR);
+    sprintf(filedir, "text2.txt");
     load(txt, filedir);
 
     int old_dup;
